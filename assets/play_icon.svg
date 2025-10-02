@@ -1,0 +1,19 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="playGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <polygon points="8,5 19,12 8,19" 
+           fill="#FF0000" 
+           filter="url(#playGlow)"/>
+  <polygon points="8,5 19,12 8,19" 
+           fill="none" 
+           stroke="#FFFFFF" 
+           stroke-width="1" 
+           opacity="0.8"/>
+</svg>

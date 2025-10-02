@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="waterGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M16 4C20 4 24 8 24 12C24 16 20 20 16 20C12 20 8 16 8 12C8 8 12 4 16 4Z" 
+        fill="#00BFFF" 
+        filter="url(#waterGlow)"/>
+  <path d="M8 20C12 20 16 24 16 28C16 28 16 28 16 28C16 24 12 20 8 20Z" 
+        fill="#00FFFF" 
+        opacity="0.8"/>
+  <path d="M24 20C20 20 16 24 16 28C16 28 16 28 16 28C16 24 20 20 24 20Z" 
+        fill="#00FFFF" 
+        opacity="0.8"/>
+  <circle cx="16" cy="12" r="2" fill="#FFFFFF" opacity="0.6"/>
+</svg>

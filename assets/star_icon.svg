@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M16 2L19.09 12.26L30 12.26L21.45 19.24L24.54 29.5L16 22.52L7.46 29.5L10.55 19.24L2 12.26L12.91 12.26L16 2Z" 
+        fill="#FFFF00" 
+        filter="url(#starGlow)"/>
+  <circle cx="16" cy="16" r="2" fill="#FFFFFF" opacity="0.8"/>
+</svg>

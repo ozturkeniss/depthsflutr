@@ -1,0 +1,23 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="mountainGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M2 28L10 16L16 20L24 8L30 12V28H2Z" 
+        fill="#8B7355" 
+        filter="url(#mountainGlow)"/>
+  <path d="M2 28L10 16L16 20L24 8L30 12V28H2Z" 
+        fill="#A0522D" 
+        opacity="0.7"/>
+  <circle cx="20" cy="12" r="3" fill="#FFFFFF" opacity="0.8"/>
+  <path d="M12 24L14 22L16 24L18 22L20 24L22 22L24 24" 
+        stroke="#FFFFFF" 
+        stroke-width="1" 
+        opacity="0.6" 
+        fill="none"/>
+</svg>

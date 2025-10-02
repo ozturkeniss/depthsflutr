@@ -1,0 +1,31 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dragon Body -->
+  <path d="M60 20C70 20 78 28 78 38L78 45C82 45 86 49 86 53L86 67C86 71 82 75 78 75L78 82C78 92 70 100 60 100C50 100 42 92 42 82L42 75C38 75 34 71 34 67L34 53C34 49 38 45 42 45L42 38C42 28 50 20 60 20Z" 
+        fill="#00FFFF" opacity="0.9"/>
+  
+  <!-- Dragon Head -->
+  <circle cx="60" cy="35" r="12" fill="#00FFFF"/>
+  <circle cx="56" cy="32" r="2" fill="#00BFFF"/>
+  <circle cx="64" cy="32" r="2" fill="#00BFFF"/>
+  
+  <!-- Dragon Wings -->
+  <path d="M45 45C35 35 25 40 20 50C15 60 25 70 35 65C40 60 45 55 45 45Z" 
+        fill="#00BFFF" opacity="0.7"/>
+  <path d="M75 45C85 35 95 40 100 50C105 60 95 70 85 65C80 60 75 55 75 45Z" 
+        fill="#00BFFF" opacity="0.7"/>
+  
+  <!-- Dragon Tail -->
+  <path d="M78 75C85 75 90 80 88 87C86 94 78 92 75 87C73 83 75 78 78 75Z" 
+        fill="#00FFFF"/>
+  
+  <!-- Magical Aura -->
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#00FFFF" stroke-width="2" opacity="0.3"/>
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#00BFFF" stroke-width="1" opacity="0.2"/>
+  <circle cx="60" cy="60" r="40" fill="none" stroke="#00FFFF" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Sparkles -->
+  <circle cx="25" cy="25" r="2" fill="#00FFFF" opacity="0.8"/>
+  <circle cx="95" cy="30" r="1.5" fill="#00BFFF" opacity="0.6"/>
+  <circle cx="30" cy="85" r="1.5" fill="#00FFFF" opacity="0.7"/>
+  <circle cx="90" cy="90" r="2" fill="#00BFFF" opacity="0.5"/>
+</svg>
