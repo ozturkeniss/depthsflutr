@@ -2,6 +2,9 @@
 
 A stunning Flutter application that takes you on an immersive journey through mystical realms. Explore the depths of oceans, soar through cosmic spaces, wander forest paths, and conquer mountain peaks with our beautifully designed interface.
 
+<img width="411" height="869" alt="image" src="https://github.com/user-attachments/assets/ea71c368-6523-404b-b91e-72e49624a97c" />
+
+
 ## ✨ Features
 
 - **🎨 Stunning Visual Design**: Custom gradient backgrounds with cyan glowing effects
