@@ -5,7 +5,9 @@ import '../login.dart';
 import '../settings.dart';
 
 class Header extends StatelessWidget {
-  const Header({super.key});
+  const Header({super.key, this.onMenuTap});
+
+  final VoidCallback? onMenuTap;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,11 @@ class Header extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               // Hamburger Menu
-              _buildGlowingIcon(Icons.menu, () {}),
+              _buildGlowingIcon(Icons.menu, () {
+                if (onMenuTap != null) {
+                  onMenuTap!();
+                }
+              }),
               
               const Spacer(),
               

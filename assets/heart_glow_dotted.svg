@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#00BFFF" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#glow)">
+    <path d="M32 54 C 10 40, 8 22, 20 16 C 26 13, 30 16, 32 20 C 34 16, 38 13, 44 16 C 56 22, 54 40, 32 54 z" fill="url(#cyan)"/>
+    <!-- dotted pattern -->
+    <g fill="#00FFFF" fill-opacity="0.7">
+      <circle cx="24" cy="28" r="1.5"/>
+      <circle cx="28" cy="24" r="1.5"/>
+      <circle cx="36" cy="24" r="1.5"/>
+      <circle cx="40" cy="28" r="1.5"/>
+      <circle cx="32" cy="32" r="1.5"/>
+      <circle cx="28" cy="36" r="1.5"/>
+      <circle cx="36" cy="36" r="1.5"/>
+      <circle cx="32" cy="40" r="1.5"/>
+    </g>
+  </g>
+</svg>
+

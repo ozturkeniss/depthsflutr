@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#00BFFF" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#glow)">
+    <path d="M32 54 C 10 40, 8 22, 20 16 C 26 13, 30 16, 32 20 C 34 16, 38 13, 44 16 C 56 22, 54 40, 32 54 z" fill="url(#cyan)"/>
+    <!-- small anchor shape inside -->
+    <g stroke="#00FFFF" stroke-opacity="0.8" stroke-width="2" fill="none">
+      <path d="M32 24 L32 40"/>
+      <circle cx="32" cy="22" r="2" fill="#00FFFF"/>
+      <path d="M26 40 C 28 46, 36 46, 38 40"/>
+      <path d="M26 40 L22 42"/>
+      <path d="M38 40 L42 42"/>
+    </g>
+  </g>
+</svg>
+

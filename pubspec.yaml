@@ -87,6 +87,9 @@ flutter:
     - assets/facebook_icon.svg
     - assets/apple_icon.svg
     - assets/dragon_spinner.svg
+    - assets/heart_glow_octopus.svg
+    - assets/heart_glow_dotted.svg
+    - assets/heart_glow_anchor.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../main.dart';
+import '../settings.dart';
+import '../favourites.dart';
 
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({super.key});
@@ -27,18 +30,52 @@ class BottomNavigation extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _buildNavItem('assets/home_icon.svg', true),
-          _buildNavItem('assets/search_icon.svg', false),
-          _buildNavItem('assets/play_icon.svg', false, isPlay: true),
-          _buildNavItem('assets/heart_icon.svg', false),
-          _buildNavItem('assets/settings_nav_icon.svg', false),
+          _buildNavItem(
+            context,
+            'assets/home_icon.svg',
+            true,
+            onTap: () {
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => const MyHomePage()),
+                (route) => false,
+              );
+            },
+          ),
+          _buildNavItem(context, 'assets/search_icon.svg', false),
+          _buildNavItem(context, 'assets/play_icon.svg', false, isPlay: true),
+          _buildNavItem(
+            context,
+            'assets/heart_icon.svg',
+            false,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const FavouritesPage()),
+              );
+            },
+          ),
+          _buildNavItem(
+            context,
+            'assets/settings_nav_icon.svg',
+            false,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SettingsPage()),
+              );
+            },
+          ),
         ],
       ),
     );
   }
 
-  Widget _buildNavItem(String assetPath, bool isActive, {bool isPlay = false}) {
-    return Container(
+  Widget _buildNavItem(BuildContext context, String assetPath, bool isActive, {bool isPlay = false, VoidCallback? onTap}) {
+    return GestureDetector(
+      onTap: onTap,
+      behavior: HitTestBehavior.opaque,
+      child: Container(
       width: 50,
       height: 50,
       decoration: BoxDecoration(
@@ -56,15 +93,16 @@ class BottomNavigation extends StatelessWidget {
           ),
         ] : null,
       ),
-      child: Center(
-        child: SvgPicture.asset(
-          assetPath,
-          width: 24,
-          height: 24,
-          colorFilter: isPlay ? ColorFilter.mode(
-            Colors.red,
-            BlendMode.srcIn,
-          ) : null,
+        child: Center(
+          child: SvgPicture.asset(
+            assetPath,
+            width: 24,
+            height: 24,
+            colorFilter: isPlay ? ColorFilter.mode(
+              Colors.red,
+              BlendMode.srcIn,
+            ) : null,
+          ),
         ),
       ),
     );
