@@ -2,7 +2,8 @@
 
 A stunning Flutter application that takes you on an immersive journey through mystical realms. Explore the depths of oceans, soar through cosmic spaces, wander forest paths, and conquer mountain peaks with our beautifully designed interface.
 
-[Ekran kaydı - 2025-08-07 02-38-25.webm](https://github.com/user-attachments/assets/e3a0edc8-d41d-4bd4-8d2b-75dee4541f33)
+
+[Ekran kaydı - 2025-10-03 19-12-54.webm](https://github.com/user-attachments/assets/cc6f7525-ef42-4119-99a1-4f3d72aa41e9)
 
 
 
